@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Clock, User, Mail, Edit, Trash2, CheckCircle, XCircle, TrendingUp, Award, IndianRupee, Loader } from 'lucide-react';
+import { BookOpen, Clock, User, Mail, Trash2, CheckCircle, XCircle, TrendingUp, Award, IndianRupee, Loader } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { PageType } from '../App';
 
@@ -283,7 +283,7 @@ const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
                         <div className="flex items-center space-x-6 text-gray-600">
                           <div className="flex items-center">
                             <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                            Completed on {new Date(enrollment.enrollmentDate).toLocaleDateString()}
+                            <span>Completed on {new Date(enrollment.enrollmentDate).toLocaleDateString()}</span>
                           </div>
                         </div>
                       </div>
